@@ -1,0 +1,159 @@
+/* ===========Body style============= */
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+}
+
+ .container{ 
+     display: grid;
+     grid-template-columns: 1fr;
+
+ }
+
+
+ /* ==========Menu style============= */
+
+.menu {
+    display: inline;
+    justify-content: space-between;
+    padding: 38px;
+    word-spacing: 10px;
+    font-size: 0.9em;
+    margin-top: -20px ;
+    height: 22px;
+}
+
+.nav-wrapper  {
+    margin-left: -40px;
+    text-transform: uppercase;
+    float: left;
+    height: 22px;
+    border-bottom: 1px solid transparent;
+}
+
+
+.nav-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s ;
+}
+
+.nav-wrapper a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+#active-nav-link {
+    color: black;
+    border-bottom: 1px black solid;
+}
+
+a #active-nav-link{
+   color: black !important; 
+}
+
+.name {
+    margin-top: 20px;
+    text-transform: uppercase;
+    float: right
+}
+
+
+
+/* =============Portfolio============== */
+.project_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.singleitem{
+    position: relative;
+}
+ 
+.background_image{
+    /* background-image: url(../Web\ project1/); */
+    /* The reason the image didnt show earlier was because the the height and with werent specified */
+    height: 350px;
+    width: 100%; 
+    /* the 100% percent width means the width is gonna adjust automatically */
+    background-size: cover; 
+    /* Cover is used for images with different size */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imagetextwrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* left to right */
+    align-items: center;  /* top to buttom */
+    height: 100%;
+    text-align: center;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+
+}
+
+.logo img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+.imagetextwrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+/* Needs to more specific with selectors */
+.imagetextwrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+/* We are gonna allow Js to add and remove this class when someone hovers over it */
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+/* ======ABout page======== */
+.two-columnlayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profileimg img {
+    width: 100%;
+}
+
+.profilecontent {
+    padding: 30px;
+}
+
+.profilecontent h1{
+    color: lightseagreen;
+}
+
+
+/* ========footer=============== */
+footer{
+    border-top: black solid 1px;
+    /* height: 100%; */
+    margin: 10px 0px 50px 0px;
+    padding: 20px 10px 10px 20px;
+    font: 120%;
+}
+
+.profileimg{
+    height: 50%;
+    width: 70%;
+    margin-left: 20px;
+}
+#abbey{
+    text-align:center;
+    text-shadow: black;
+    color: lightseagreen;
+    text-decoration-style: dashed;
+}
